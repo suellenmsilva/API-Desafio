@@ -11,7 +11,7 @@ $ db.create_all()
 $ exit() 
 ```
 
-###Rodar a aplicação
+### Rodar a aplicação
 No terminal execute para inicializar o projeto  
 ```sh
 $ python app.py 
