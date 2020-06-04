@@ -59,13 +59,13 @@ def get_contacts():
   result = contacts_schema.dump(all_contacts)
   return jsonify(result)
 
-# Get Single Products
+# Get Single Contact
 @app.route('/contact/<id>', methods=['GET'])
 def get_contact(id):
   contact = Contact.query.get(id)
   return contact_schema.jsonify(contact)
 
-# Update a Product
+# Update a Contact
 @app.route('/contact/<id>', methods=['PUT'])
 def update_contact(id):
   contact = Contact.query.get(id)
@@ -93,6 +93,6 @@ def delete_product(id):
 
   return contact_schema.jsonify(contact)
 
-# Run Server
+# Run
 if __name__ == '__main__':
   app.run(debug=True)
